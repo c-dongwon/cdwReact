@@ -1,10 +1,10 @@
 import React from 'react';
-import Test6 from './220125/Test6';
+import Test8 from './220126/Test8';
 
 const App = () => {
   return (
     <div>
-      <Test6 />
+      <Test8 />
     </div>
   );
 };
