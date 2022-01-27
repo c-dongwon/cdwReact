@@ -4,17 +4,14 @@ import Test8Sub from './Test8Sub';
 const Test8 = () => {
     const [msg,setMsg] = useState('')
     const [show,setShow] = useState(false)
-
     const showMsg = (text) =>{
-        setShow(true)
         setMsg(text)
+        setShow(true)
     }
-
     const onMsg1 = () =>{
         const result = window.confirm('삭제?')
         if(result){
-            // confrim 확인 누르면 true
-            showMsg('삭제 ㄱ')
+            showMsg('삭제')
         }else{
             return
         }
@@ -22,16 +19,18 @@ const Test8 = () => {
     const onMsg2 = () =>{
         const result = window.confirm('복구?')
         if(result){
-            showMsg('복구 ㄱ')
+            showMsg('복구')
         }else{
             return
         }
     }
     return (
         <div>
-            <button onClick={onMsg1}>삭제</button>
-            <button onClick={onMsg2}>복구</button>
-            <Test8Sub show={show} msg={msg} setShow={setShow}/>
+            <p>
+                <button onClick={onMsg1}>삭제</button>
+                <button onClick={onMsg2}>복구</button>
+            </p>
+            <Test8Sub msg={msg} show={show} setShow={setShow}/>
         </div>
     );
 };

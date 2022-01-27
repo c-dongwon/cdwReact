@@ -1,15 +1,14 @@
 import React, { useEffect } from 'react';
 
-const Test8Sub = ({show,setShow,msg}) => {
+const Test8Sub = ({msg,show,setShow}) => {
     useEffect(()=>{
         const timer = setTimeout(()=>{
             setShow(false)
-            // 버튼 클릭후 호출시 true 3초뒤에 false
         },3000)
         return() =>{
             clearTimeout(timer)
         }
-    },[show])//show 현재값이랑 연동
+    },[show])
     return (
         <>
         <h1>연습</h1>
