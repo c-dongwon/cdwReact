@@ -1,10 +1,10 @@
 import React from 'react';
-import Test8 from './220127/Test8';
-
+import Customer from './220130/customer/Customer';
+import './css/reset.css'
 const App = () => {
   return (
     <div>
-      <Test8 />
+      <Customer />
     </div>
   );
 };
