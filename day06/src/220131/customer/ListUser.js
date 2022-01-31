@@ -4,9 +4,9 @@ import ItemUser from './ItemUser';
 const ListUser = ({users,onDel,onEdit}) => {
     return (
         <div>
-              <h2 className="users">그해 우리는 출연진</h2>
-              <table>
-              <colgroup>
+            <h2 className="users">그해 우리는 출연진</h2>
+            <table>
+                <colgroup>
                     <col className="w1" />
                     <col className="w2" />
                     <col className="w3" />
@@ -20,10 +20,10 @@ const ListUser = ({users,onDel,onEdit}) => {
                 </thead>
                 <tbody>
                     {
-                        users.map(user  => <ItemUser key={user.id} onEdit={onEdit} onDel={onDel} user={user}/>)
+                        users.map(user => <ItemUser user={user} key={user.id} onEdit={onEdit} onDel={onDel}/>)
                     }
                 </tbody>
-              </table>
+            </table>
         </div>
     );
 };
