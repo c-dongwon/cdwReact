@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react';
 
-const EditUser = ({current , onUpdate, setIsEdit}) => {
-    const [user,setUser] = useState(current)
-    const {name,addr,id} = user
+const EditUser = ({ current , onUpdate, setIsEdit }) => {
+    const [ user , setUser ] = useState( current )
+    const { name , addr, id } = user 
 
-    useEffect(()=>{
-        setUser(current)
+
+    //업데이트 
+    useEffect( () => {
+        setUser( current )
     },[current])
+    
     const changeInput = (e) => {
         const { value , name } = e.target 
         setUser({
