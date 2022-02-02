@@ -1,10 +1,9 @@
 import React from 'react';
-import Customer from './220131/customer/Customer';
-import './css/reset.css'
+import Test3 from './220202/Test3';
 const App = () => {
   return (
     <div>
-      <Customer />
+      <Test3/>
     </div>
   );
 };
