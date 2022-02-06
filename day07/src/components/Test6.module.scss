@@ -1,0 +1,25 @@
+.cont{
+    width: 400px;
+    margin: 15px auto;
+    height: 400;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.tit{
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn{
+    background-color: #333;
+    color: #fff;
+    border: 0;
+    width: 200px;
+    height: 40px;
+    transition: 0.4s;
+    &:hover{
+        background-color: tomato;
+    }
+}
