@@ -1,5 +1,5 @@
 import React from 'react';
-import Test1 from './220219/sample/gallery/Gallery';
+import Test1 from './components/Test19';
 
 
 const App = () => {
