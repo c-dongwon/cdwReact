@@ -1,32 +1,30 @@
 import React from 'react';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
-import Main from './220227/component6/Main';
-import Member from './220227/component6/Member';
-import MemberDetail from './220227/component6/MemberDetail';
+import { BrowserRouter, Routes, Route,  Link } from "react-router-dom";
+import './css/reset.css'
+import './220228/component7/style.css'
+import Main from './220228/component7/Main';
+import Products from './220228/component7/Products';
+import ProductDetail from './220228/component7/ProductDetail';
 
 const App = () => {
   return (
     <>
-     <BrowserRouter>
+      <BrowserRouter>
+        <nav>
+          <ul>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/products'>products</Link></li>
+          </ul>
+        </nav>
+
         <Routes>
-            {/* 멀티 */}
-            <Route path='/' element={<Main/>}>
-                <Route path='main'/>
-                <Route path='about'/>
-                <Route path='aaa'/>
-                <Route path='bbb'/>
-            </Route>
-            <Route path='member'>
-                <Route element={<Member/>}/>
-                <Route path=':memberId' element={<MemberDetail/>}/>
-            </Route>
+          <Route path='/' element={<Main/>}/>
+          <Route path='/products'>
+              <Route element={<Products/>} index/>
+              <Route path=':productId' element={<ProductDetail/>}></Route>
+          </Route>
         </Routes>
-     </BrowserRouter> 
+      </BrowserRouter> 
     </>
   );
 };
