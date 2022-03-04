@@ -6,7 +6,7 @@ import Todos from './components/todos/Todos';
 
 const App = () => {
   return (
-    <div>
+    <>
       <Todos />
       <hr/>
       <ChangeColor />
@@ -14,7 +14,7 @@ const App = () => {
       <Count />
       <hr/>
       <Color />      
-    </div>
+    </>
   );
 };
 
