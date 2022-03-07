@@ -1,10 +1,10 @@
 import React from 'react';
-import Todos from './components/todos/Todos';
+import Todos from './220307/Todos'
 
 const App = () => {
   return (
     <div>
-      <Todos />
+      <Todos/>
     </div>
   );
 };

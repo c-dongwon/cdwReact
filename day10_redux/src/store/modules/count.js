@@ -11,7 +11,7 @@ export const reset  = ()  => ({type:RESET})
 //초기화
 
 const initialState = {
-    num : 1 
+    num : 1
 }
 
 //리듀서만들기( 순수함수 )
