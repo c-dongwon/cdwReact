@@ -1,20 +1,20 @@
 import React from 'react';
-import Subscibers from './220309/components/Subscibers';
-import { Provider } from 'react-redux';
-import store from './220309/redux/store';
 import './App.css'
-import Display from './220309/components/Display';
-import Views from './220309/components/Views';
-import Comments from './220309/components/Comments';
+import Sub from './220319/components/Sub';
+import { Provider } from 'react-redux';
+import store from './220319/redux/store';
+import Display from './220319/components/Display';
+import Views from './220319/components/Views';
+import Comments from './220319/components/Comments';
 
 const App = () => {
   return (
     <Provider store={store}>
       <div className='app'>
-        <Subscibers/>
-        <Display/>
-        <Views/>
-        <Comments/>
+          <Sub/>
+          <Display/>
+          <Views/>
+          <Comments/>
       </div>
     </Provider>
   );
