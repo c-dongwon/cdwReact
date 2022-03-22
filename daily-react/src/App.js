@@ -1,9 +1,9 @@
 import React from 'react';
-import UseReducer from './220321/UseReducer';
+import Context from './220322/Context'
 const App = () => {
   return (
     <div>
-      <UseReducer/>
+      <Context/>
     </div>
   );
 };
