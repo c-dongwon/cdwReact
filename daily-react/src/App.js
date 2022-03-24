@@ -1,10 +1,9 @@
 import React from 'react';
-import Context from './220322/Context'
-import Usestate from './hook/Usestate';
+import UseEffect from './hook/UseEffect';
 const App = () => {
   return (
     <div>
-      <Usestate/>
+      <UseEffect/>
     </div>
   );
 };
