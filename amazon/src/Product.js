@@ -10,6 +10,7 @@ const Product = () => {
                     <small>가격</small>    
                     <strong>10,000</strong>
                     <small>원</small>
+                    
                 </p>    
             </div>
         </div>
